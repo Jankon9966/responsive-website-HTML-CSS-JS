@@ -343,6 +343,9 @@
     }
     .mobile_menu {
         display: initial;
+        position: absolute;
+        right: 15px;
+        top: 10px;
     }
     .header .content {
         flex-wrap: wrap-reverse;
@@ -374,12 +377,6 @@
 }
 
 @media (max-width: 568px) {
-    .mobile_menu {
-        position: fixed;
-        right: 15px;
-        top: 10px;
-        z-index: 100;
-    }
     .section_heading {
         font-size: 24px;
         line-height: 30px;
