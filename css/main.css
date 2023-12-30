@@ -12,7 +12,7 @@
     font-size: 38px;
     line-height: 50px;
     font-weight: 700;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     color: #000000;
 }
 
@@ -22,7 +22,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: #74C69D;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -145,11 +145,12 @@
     text-align: center;
 }
 
-.partners .partners_wrapper span {
+/* SECTION SPAN */
+.section_span {
     font-family: "Work Sans", sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 30px;
-    font-weight: 400;   
+    font-weight: 400; 
 }
 
 .partners .partners_wrapper .partners_images {
@@ -177,6 +178,47 @@
     font-weight: 400;
     padding-bottom: 20px;
     color: rgba(33, 37, 41, 0.5);
+}
+
+.teams {
+    max-width: 1176px;
+    margin: 40px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.teams .talents_images_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.teams .talents_images_wrapper .single_item {
+    padding: 20px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.teams .talents_images_wrapper .single_item h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.teams .talents_images_wrapper .single_item h4 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 0.75);
+    text-transform: uppercase;
+    text-align: start;
+    padding-top: 20px;
 }
 
 
@@ -233,12 +275,18 @@
         width: 420px;
     }
     .partners .partners_wrapper .partners_images {
+        justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
     }
     .partners .partners_sub img {
         width: 400px;
         height: auto;
+    }
+    .teams .talents_images_wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
 
