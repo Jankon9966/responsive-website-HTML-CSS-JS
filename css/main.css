@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    background-color:#74C69D;
+}
+
+.header .header_navbar {
+    max-width: 1180px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.header .header_navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header .header_navbar .logo h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.header .header_navbar .nav_menu .nav_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .header_navbar .nav_menu .nav_list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.header .content {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding-bottom: 70px;
+}
+
+.header .content .left_side .label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.header .content .left_side h1 {
+    font-family: "Crimson Text", serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 16px 0;
+}
+ 
+.header .content .left_side p {
+    font-size: 15px;
+    line-height: 18.75px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+ 
+.header .content .left_side .header_btn {
+    width: 170px;
+    height: 48px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*       MEDIA QUERIES       */
+
+@media(max-width: 1200px) {
+    .header .header_navbar {
+        padding: 20px 25px 30px 25px;
+    }
+    .header .content {
+        padding: 20px 30px 70px 30px;
+        gap: 100px;
+    }
+    .header .content .left_side h1 {
+        font-size: 35px;
+        line-height: 40px;
+        font-weight: 600;
+    }
+    .header .content .right_side img {
+        width: 580px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header .header_navbar .logo img {
+        width: 65px;
+        height: 45px;
+    }
+    .header .header_navbar .logo h2 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+    .header .content .left_side h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .header .content {
+        gap: 70px;
+    }
+    .header .content .left_side p {
+        font-size: 14px;
+    }
+    .header .content .right_side img {
+        width: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .header_navbar .nav_menu {
+        display: none;
+    }
+    .header .header_navbar .logo {
+        gap: 12px;
+    }
+    .header .header_navbar .logo img {
+        width: 55px;
+        height: 40px;
+    }
+    .header .header_navbar .logo h2 {
+        font-size: 34px;
+        line-height: 35px;
+    }
+    .mobile_menu {
+        display: initial;
+    }
+    .header .content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .header .content .right_side img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 568px) {
+    .mobile_menu {
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        z-index: 100;
+    }
+    .header .header_navbar{
+        padding: 15px;
+    }
+    .header .header_navbar .logo {
+        gap: 10px;
+    }
+    .header .header_navbar .logo img {
+        width: 45px;
+        height: 31px;
+    }
+    .header .header_navbar .logo h2 {
+        font-size: 30px;
+        line-height: 37.5px;
+        font-weight: 500;
+    }
+    .header .content {
+        text-align: start;
+        padding: 30px 20px 40px 20px;
+        gap: 26px;
+    }
+    .header .content .left_side h1 {
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    .header .content .left_side p {
+        font-size: 14px;
+    }
+}
