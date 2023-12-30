@@ -6,6 +6,42 @@
     box-sizing: border-box;
 }
 
+/* SECTIONS HEADING */
+.section_heading {
+    font-family: "Crimson Text", serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #000000;
+}
+
+/* SECTIONS LABEL */
+.section_label {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #74C69D;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+/* SECTIONS BUTTON */
+.section_btn {
+    width: 170px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 .header {
     font-family: "Work Sans", sans-serif;
     width: 100%;
@@ -102,6 +138,27 @@
     cursor: pointer;
 }
 
+.partners {
+    max-width: 1159px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.partners .partners_wrapper span {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;   
+}
+
+.partners .partners_wrapper .partners_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 20px;
+}
 
 
 
@@ -156,6 +213,10 @@
     .header .content .right_side img {
         width: 420px;
     }
+    .partners .partners_wrapper .partners_images {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -186,6 +247,10 @@
         max-width: 100%;
         height: auto;
     }
+    .partners .partners_wrapper .partners_images {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 @media (max-width: 568px) {
@@ -194,6 +259,10 @@
         right: 15px;
         top: 10px;
         z-index: 100;
+    }
+    .section_heading {
+        font-size: 24px;
+        line-height: 30px;
     }
     .header .header_navbar{
         padding: 15px;
