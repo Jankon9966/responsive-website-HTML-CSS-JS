@@ -27,6 +27,7 @@
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+
 /* SECTIONS BUTTON */
 .section_btn {
     width: 170px;
@@ -72,6 +73,10 @@
     line-height: 50px;
     font-weight: 500;
     color: #ffffff;
+}
+
+.header .header_navbar .nav_menu {
+    transition: all ease 0.5s;
 }
 
 .header .header_navbar .nav_menu .nav_list {
@@ -270,18 +275,22 @@
     .header .header_navbar {
         padding: 20px 25px 30px 25px;
     }
+
     .header .content {
         padding: 20px 30px 70px 30px;
         gap: 100px;
     }
+
     .header .content .left_side h1 {
         font-size: 35px;
         line-height: 40px;
         font-weight: 600;
     }
+    
     .header .content .right_side img {
         width: 580px;
     }
+
     .teams .talents_images_wrapper {
         justify-content: center;
         flex-wrap: wrap;
@@ -293,32 +302,40 @@
         width: 65px;
         height: 45px;
     }
+
     .header .header_navbar .logo h2 {
         font-size: 37px;
         line-height: 40px;
     }
+
     .header .content .left_side h1 {
         font-size: 35px;
         font-weight: 600;
     }
+
     .header .content {
         gap: 50px;
     }
+
     .header .content .left_side p {
         font-size: 14px;
     }
+
     .header .content .right_side img {
         width: 420px;
     }
+
     .partners .partners_wrapper .partners_images {
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
     }
+    
     .partners .partners_sub img {
         width: 400px;
         height: auto;
     }
+
     .teams .talents_images_wrapper {
         justify-content: center;
         flex-wrap: wrap;
@@ -328,8 +345,31 @@
 
 @media (max-width: 768px) {
     .header .header_navbar .nav_menu {
-        display: none;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 4px 1px 6px rgba(0,0,0,0.2);
+        position: absolute;
+        top: 0;
+        left: -100%;
     }
+
+    .header .header_navbar .nav_menu .nav_list {
+        flex-direction: column;
+        margin: 85px 0 40px 0;
+    }
+    .header .header_navbar .nav_menu .nav_list li {
+        margin-top: 10px;
+    }
+    .header .header_navbar .nav_menu .nav_list li a {
+        color: #74C69D;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header .header_navbar .nav_menu.active {
+        left: 0;
+    }
+
     .header .header_navbar .logo {
         gap: 12px;
     }
@@ -344,8 +384,8 @@
     .mobile_menu {
         display: initial;
         position: absolute;
-        right: 15px;
-        top: 10px;
+        right: 20px;
+        top: 18px;
     }
     .header .content {
         flex-wrap: wrap-reverse;
