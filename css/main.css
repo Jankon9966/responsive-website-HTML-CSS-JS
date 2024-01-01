@@ -288,7 +288,7 @@ body {
 }
 
 .services {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
     margin-bottom: 100px;
     padding: 0 10px;
@@ -302,7 +302,7 @@ body {
 
 .services .services_price {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -457,6 +457,10 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
+    }
+    
+    .services .services_price {
+        justify-content: center;
     }
 }
 
