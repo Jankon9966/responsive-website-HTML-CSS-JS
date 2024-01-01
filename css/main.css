@@ -259,6 +259,29 @@
     color: #ffffff;
 }
 
+.portfolio {
+    max-width: 1210px;
+    margin: 15px auto 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio .portfolio_top {
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio_cards .card_box {
+    margin: 20px 0;
+}
+
 
 
 
@@ -294,6 +317,19 @@
     .teams .talents_images_wrapper {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .portfolio {
+        margin: 15px 0 50px 0;
+    }
+
+    .portfolio .portfolio_cards {
+        justify-content: center;
+    }
+
+    .portfolio .portfolio_cards .card_box img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -427,6 +463,10 @@
     .section_heading {
         font-size: 24px;
         line-height: 30px;
+    }
+
+    .section_span {
+        font-size: 18px;
     }
 
     .header .header_navbar{
