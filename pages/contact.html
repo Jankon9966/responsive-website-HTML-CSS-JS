@@ -7,6 +7,101 @@
     <title>Contact</title>
 </head>
 <body>
-    <h1>Contact</h1>
+
+    <header class="header">
+        <div class="header_navbar">
+          <div class="logo">
+            <img src="../assets/logo.svg" alt="Loading logo.." />
+            <h2>Start</h2>
+          </div>
+          <nav class="nav_menu">
+            <ul class="nav_list">
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile_menu">
+            <img src="../assets/mobile_menu_icon.svg" alt="mobile menu" />
+          </div>
+        </div>
+      </header>
+
+    <!----- CONTACT SECTION ----->
+      
+    <section class="contact">
+      <h1 class="section_heading">Contact Us</h1>
+      <span class="section_span">Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.</span>
+
+      <div class="contact_container">
+      
+          <form class="form">
+            
+            <div class="input_field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+
+            <div class="input_field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class="message_field">
+              <label for="msg">Message</label>
+              <textarea name="message" id="msg" cols="30" rows="4"></textarea>
+            </div>
+
+            <button class="form_btn">Submit</button>
+
+          </form>
+
+        <div class="right">
+          <img src="../assets/contact_map_img.svg" alt="Google map">
+        </div>
+      </div>
+
+    </section>
+
+    <!---- FOOTER ---->
+
+    <footer class="footer">
+      <div class="footer_flex">
+        <div class="social_media">
+          <div class="icon">
+            <img src="../assets/footer icons/facebookIcon.svg" alt="Facebook" />
+          </div>
+          <div class="icon">
+            <img src="../assets/footer icons/instagramIcon.svg" alt="Instagram" />
+          </div>
+          <div class="icon">
+            <img src="../assets/footer icons/twitterIcon.svg" alt="Twitter" />
+          </div>
+          <div class="icon">
+            <img src="../assets/footer icons/pinterestIcon.svg" alt="Pinterest" />
+          </div>
+          <div class="icon">
+            <img src="../assets/footer icons/tiktokIcon.svg" alt="TikTok" />
+          </div>
+          <div class="icon">
+            <img src="../assets/footer icons/youtubeIcon.svg" alt="YouTube" />
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© Start, 2022. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
 </body>
 </html>
