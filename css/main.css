@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 /* SECTIONS HEADING */
 .section_heading {
     font-family: "Crimson Text", serif;
@@ -19,10 +23,10 @@
 /* SECTIONS LABEL */
 .section_label {
     font-family: "Work Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     font-weight: 700;
-    padding-bottom: 10px;
+    padding: 30px 0 20px 0;
     color: #74C69D;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -41,6 +45,13 @@
     line-height: 25px;
     font-weight: 400;
     cursor: pointer;
+}
+/* SECTION SPAN */
+.section_span {
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400; 
 }
 
 .header {
@@ -100,7 +111,7 @@
     display: flex;
     align-items: center;
     gap: 120px;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
 }
 
 .header .content .left_side .label {
@@ -145,18 +156,11 @@
 
 .partners {
     max-width: 1159px;
-    margin: 40px auto;
+    margin: 20px auto 40px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-/* SECTION SPAN */
-.section_span {
-    font-family: "Work Sans", sans-serif;
-    font-size: 19px;
-    line-height: 30px;
-    font-weight: 400; 
-}
 
 .partners .partners_wrapper .partners_images {
     display: flex;
@@ -261,8 +265,9 @@
 
 .portfolio {
     max-width: 1210px;
-    margin: 15px auto 80px auto;
-    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0px 20px;
     text-align: center;
 }
 
@@ -282,6 +287,87 @@
     margin: 20px 0;
 }
 
+.services {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0 10px;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+}
+
+.services .services_top {
+    margin-bottom: 40px;
+}
+
+.services .services_price {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .services_price .price_card {
+    max-width: 340px;
+    padding: 46px 30px;
+    margin: 20px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.services .services_price .price_card h5 {
+    font-size: 15px;
+    line-height: 18.5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color:rgba(0, 0, 0, 1);
+    padding-bottom: 6px;
+}
+
+.services .services_price .price_card .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+}
+
+.services .services_price .price_card .price h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.services .services_price .price_card .price span {
+    font-size: 15px;
+    line-height: 18.5px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.services .services_price .price_card h6 {
+    font-size: 14px;
+    line-height: 18.5px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 0.5);
+    padding-bottom: 20px;
+}
+
+.services .services_price .price_card .list {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.services .services_price .price_card .list .list_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 6px 0;
+}
+
+.services .services_price .price_card .list .list_item {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 1);
+}
 
 
 
