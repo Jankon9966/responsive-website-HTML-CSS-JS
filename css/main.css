@@ -308,11 +308,6 @@
         line-height: 40px;
     }
 
-    .header .content .left_side h1 {
-        font-size: 35px;
-        font-weight: 600;
-    }
-
     .header .content {
         gap: 50px;
     }
@@ -344,6 +339,13 @@
 }
 
 @media (max-width: 768px) {
+    .mobile_menu {
+        display: initial;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+    }
+
     .header .header_navbar .nav_menu {
         width: 80%;
         height: 100vh;
@@ -358,14 +360,17 @@
         flex-direction: column;
         margin: 85px 0 40px 0;
     }
+
     .header .header_navbar .nav_menu .nav_list li {
         margin-top: 10px;
     }
+
     .header .header_navbar .nav_menu .nav_list li a {
         color: #74C69D;
         font-size: 20px;
         font-weight: 600;
     }
+    
     .header .header_navbar .nav_menu.active {
         left: 0;
     }
@@ -373,43 +378,45 @@
     .header .header_navbar .logo {
         gap: 12px;
     }
+
     .header .header_navbar .logo img {
         width: 55px;
         height: 40px;
     }
+
     .header .header_navbar .logo h2 {
         font-size: 34px;
         line-height: 35px;
     }
-    .mobile_menu {
-        display: initial;
-        position: absolute;
-        right: 20px;
-        top: 18px;
-    }
+
     .header .content {
         flex-wrap: wrap-reverse;
         justify-content: center;
         text-align: center;
         gap: 40px;
     }
+
     .header .content .right_side img {
         max-width: 100%;
         height: auto;
     }
+
     .partners .partners_wrapper .partners_images {
         flex-direction: column;
         gap: 40px;
     }
+
     .partners .partners_sub {
         flex-direction: column;
         text-align: center;
         margin: 30px 0;
         gap: 30px;
     }
+
     .partners .partners_sub:last-child {
         flex-direction: column-reverse;
     }
+    
     .partners .partners_sub img {
         max-width: 100%;
         height: auto;
@@ -421,40 +428,46 @@
         font-size: 24px;
         line-height: 30px;
     }
+
     .header .header_navbar{
         padding: 15px;
     }
+
     .header .header_navbar .logo {
         gap: 10px;
     }
+
     .header .header_navbar .logo img {
         width: 45px;
         height: 31px;
     }
+
     .header .header_navbar .logo h2 {
         font-size: 30px;
         line-height: 37.5px;
         font-weight: 500;
     }
+
     .header .content {
         text-align: start;
         padding: 30px 20px 40px 20px;
         gap: 26px;
     }
+
     .header .content .left_side h1 {
         font-size: 28px;
         line-height: 35px;
         font-weight: 700;
     }
-    .header .content .left_side p {
-        font-size: 14px;
-    }
+
     .partners .partners_sub {
         text-align: start;
     }
+
     .partners .partners_sub .partners_para {
         font-size: 14px;
     }
+
     .footer .footer_flex {
         justify-content: center;
         flex-wrap: wrap;
