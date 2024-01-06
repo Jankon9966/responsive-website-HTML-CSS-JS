@@ -530,7 +530,10 @@ body {
     .partners .partners_wrapper .partners_images {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
+    }
+    .partners .partners_wrapper .partners_images .image_box img {
+        width: 120px;
     }
     
     .partners .partners_sub img {
@@ -618,11 +621,6 @@ body {
         height: auto;
     }
 
-    .partners .partners_wrapper .partners_images {
-        flex-direction: column;
-        gap: 40px;
-    }
-
     .partners .partners_sub {
         flex-direction: column;
         text-align: center;
@@ -687,6 +685,10 @@ body {
 
     .partners .partners_sub .partners_para {
         font-size: 14px;
+    }
+
+    .partners .partners_wrapper .partners_images {
+        flex-direction: column;
     }
 
     .footer .footer_flex {
