@@ -46,6 +46,7 @@ body {
     font-weight: 400;
     cursor: pointer;
 }
+
 /* SECTION SPAN */
 .section_span {
     font-family: "Work Sans", sans-serif;
@@ -288,7 +289,7 @@ body {
 }
 
 .services {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
     margin-bottom: 100px;
     padding: 0 10px;
