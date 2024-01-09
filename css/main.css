@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-}
-
 /* SECTIONS HEADING */
 .section_heading {
     font-family: "Crimson Text", serif;
@@ -686,6 +682,10 @@ body {
 
     .partners .partners_wrapper .partners_images {
         flex-direction: column;
+    }
+
+    .footer {
+        padding: 25px 0;
     }
 
     .footer .footer_flex {
