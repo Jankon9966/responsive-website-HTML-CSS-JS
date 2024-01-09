@@ -87,10 +87,6 @@ body {
     color: #ffffff;
 }
 
-.header .header_navbar .nav_menu {
-    transition: all ease 0.5s;
-}
-
 .header .header_navbar .nav_menu .nav_list {
     list-style-type: none;
     display: flex;
@@ -574,6 +570,7 @@ body {
         position: absolute;
         top: 0;
         left: -100%;
+        transition: ease 0.5s;
     }
 
     .header .header_navbar .nav_menu .nav_list {
